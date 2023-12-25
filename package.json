@@ -1,16 +1,17 @@
 {
     "scripts": {
-        "dev": "vite",
-        "build": "vite build",
-        "preview": "vite build && vite preview"
+        "dev": "vercel dev",
+        "build": "vercel build"
     },
     "dependencies": {
+        "@vite-plugin-vercel/vike": "^2.0.0",
         "mini-van-plate": "^0.5.4-perf.0",
         "node-fetch": "^3.3.2",
         "typescript": "4.8.4",
         "vanjs-core": "^1.2.7",
         "vike": "0.4.151",
-        "vite": "^4.0.3"
+        "vite": "^4.0.3",
+        "vite-plugin-vercel": "^2.0.0"
     },
     "type": "module"
 }
