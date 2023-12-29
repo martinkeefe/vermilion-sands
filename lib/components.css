@@ -1,0 +1,53 @@
+.main-head {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  background-color: #c00;
+  color: #210;
+  padding: 0.2rem 0.5rem;
+  /* font-size: 3rem; */
+  font-family: system-ui, sans-serif;
+  text-transform: uppercase;
+  /* border-bottom: 1px solid #c00; */
+}
+
+.main-head .brand {
+  align-self: end;
+  /* font-size: 1.2rem; */
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  white-space: nowrap;
+}
+
+.main-head .kind {
+  align-self: end;
+  font-size: 0.95rem;
+  letter-spacing: 0.05rem;
+  white-space: nowrap;
+}
+
+.main-h1 {
+  grid-area: h1;
+}
+
+h1.main-h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.main-side {
+  grid-area: side;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+.main-side img {
+  width: 100%;
+}
+
+.main-text {
+  grid-area: text;
+  font-weight: 300;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}

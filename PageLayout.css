@@ -1,0 +1,95 @@
+/* This CSS is common to all pages */
+
+body {
+  margin: 0;
+  /* font-family: sans-serif; */
+  font-family: Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052,
+    Sylfaen, serif;
+  background-color: #210;
+  color: #ccc;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.navitem {
+  padding: 3px;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.layout .sidebar {
+  padding: 20px;
+  padding-top: 42px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.8em;
+}
+
+.release h1 {
+  font-weight: normal;
+}
+
+.release .artist {
+  font-weight: bold;
+}
+
+.release .title {
+  font-style: italic;
+  font-weight: normal;
+}
+
+.release .info_img {
+  display: flex;
+  /* grid-template-columns: 1fr 1fr; */
+}
+
+.release .info {
+  font-size: 1.1rem;
+  padding-left: 1rem;
+  /* min-width: 20rem; */
+}
+
+.release dl.info {
+  margin: 0;
+}
+
+.release dl.info dt {
+  font-family: system-ui, sans-serif;
+  font-variant: small-caps;
+}
+
+.release dl.info dd {
+  margin-left: 1rem;
+}
+
+.release .info ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.release .img {
+  width: 32rem;
+}
+
+.release .text {
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1.7rem;
+}

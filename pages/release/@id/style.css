@@ -1,0 +1,33 @@
+h1 {
+  font-weight: 300;
+}
+
+img {
+  margin-bottom: 2rem;
+}
+
+.artist {
+  font-weight: 600;
+}
+
+.title {
+  font-style: italic;
+  font-weight: 300;
+}
+
+p.text {
+  margin: 0;
+  margin-bottom: 0.6rem;
+  text-align: justify;
+}
+
+p.byline {
+  margin: 0;
+  text-align: right;
+}
+
+.main-side div {
+  margin-bottom: 0.6rem;
+  margin-left: 1rem;
+  text-indent: -1rem;
+}

@@ -1,39 +1,41 @@
-/* This CSS is common to all pages */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap");
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Cormorant Garamond", serif;
+  /* font-weight: 300; */
+  background-color: #222;
+  color: #ccc;
 }
 * {
   box-sizing: border-box;
 }
 a {
+  color: white;
   text-decoration: none;
 }
-
-.navitem {
-  padding: 3px;
+a:hover {
+  text-decoration: underline;
 }
 
-.layout {
-  display: flex;
-  max-width: 900px;
-  margin: auto;
+.wrapper {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 0 1fr 0;
+  grid-template-areas:
+    "header header header"
+    ".        h1        ."
+    ".       side       ."
+    ".       text       .";
 }
 
-.layout .sidebar {
-  padding: 20px;
-  padding-top: 42px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  line-height: 1.8em;
-}
-
-.layout .content {
-  padding: 20px;
-  /* padding-bottom: 50px; */
-  /* border-left: 2px solid #eee; */
-  min-height: 100vh;
+@media (min-width: 46rem) {
+  .wrapper {
+    grid-template-columns: 1fr minmax(20rem, 30rem) minmax(20rem, 30rem) 1fr;
+    grid-template-areas:
+      "header header header header"
+      ".        h1     h1        ."
+      ".       text   side       ."
+      ".       text   side       .";
+  }
 }

@@ -5,13 +5,18 @@
         "preview": "vite build && vite preview"
     },
     "dependencies": {
+        "markdown-it": "^14.0.0",
         "mini-van-plate": "^0.5.4-perf.0",
         "node-fetch": "^3.3.2",
+        "smartypants": "^0.2.2",
         "typescript": "4.8.4",
         "vanjs-core": "^1.2.7",
         "vike": "0.4.151",
         "vite": "^4.0.3",
         "vite-plugin-vercel": "^2.0.0"
     },
-    "type": "module"
+    "type": "module",
+    "imports": {
+        "#lib/*": "./lib/*.ts"
+    }
 }
