@@ -14,7 +14,7 @@ export default defineConfig(async ({ command, mode }) => {
     ],
     resolve: {
       alias: {
-        "#lib": __dirname + "\\lib",
+        "#lib": __dirname + "/lib",
       },
     },
   };
